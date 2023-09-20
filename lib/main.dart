@@ -124,15 +124,21 @@ class _MainScreenState extends State<MainScreen> with WidgetsBindingObserver {
               backgroundColor: _isPermissionGranted ? Colors.transparent : null,
               body: _isPermissionGranted
                   ? Column(
+                mainAxisAlignment: MainAxisAlignment.end,
                 children: [
-                  Expanded(
-                    child: Container(),
-                  ),
+                  Container(),
                   Container(
-                    padding: const EdgeInsets.only(bottom: 13.0),
-                    child: Center(
+                    color: Theme.of(context).colorScheme.inversePrimary,
+                    alignment: Alignment.center,
+                    child: Padding(
+                      padding: const EdgeInsets.symmetric(vertical: 8.0),
                       child: ElevatedButton(
                         onPressed: _scanImage,
+                        style: ButtonStyle(
+                          minimumSize: MaterialStateProperty.all<Size>(
+                          const Size(256, 64), // Set the desired width and height
+                        ),
+                      ),
                         child: const Text('Scan text'),
                       ),
                     ),
