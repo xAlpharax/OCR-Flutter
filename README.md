@@ -2,7 +2,7 @@
 
 A fully functional Flutter application dedicated to Optical Character Recognition (OCR).
 
-This repository is part of my entry at EUCYS 2023, representing Romania @ Brussels with apps for helping the visually impaired *see*.
+This repository is part of my entry at EUCYS 2023, representing Romania in Brussels with apps for helping the visually impaired *see*.
 
 ## Insructions
 
